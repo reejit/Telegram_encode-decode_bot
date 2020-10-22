@@ -26,10 +26,6 @@ def help_command(update, context):
         '====== Help Menu ======\n'
         'use /b64encode <text_to_encode> to encode into base 64 format\n'
         'use /b64decode <text_to_decode> to decode into base 64 format\n'
-        'use /b32encode <text_to_encode> to encode into base 32 format\n'
-        'use /b32decode <text_to_decode> to decode into base 32 format\n'
-        'use /b16encode <text_to_encode> to encode into base 16 format\n'
-        'use /b16decode <text_to_decode> to decode into base 16 format\n'
         )
 
 def b64encode_text(update, context):
