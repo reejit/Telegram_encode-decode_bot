@@ -24,8 +24,8 @@ def help_command(update, context):
     """Send a message when the command /help is issued."""
     update.message.reply_text(
         '====== Help Menu ======\n'
-        'use /b64encode <text_to_encode> to encode into base 64 format\n'
-        'use /b64decode <text_to_decode> to decode into base 64 format\n'
+        'use /encode <text_to_encode> to encode into base 64 format\n'
+        'use /decode <text_to_decode> to decode into base 64 format\n'
         )
 
 def b64encode_text(update, context):
@@ -74,8 +74,8 @@ def main():
     # on different commands - answer in Telegram
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help_command))
-    dp.add_handler(CommandHandler("b64encode", b64encode_text))
-    dp.add_handler(CommandHandler("b64decode", b64decode_text))
+    dp.add_handler(CommandHandler("encode", b64encode_text))
+    dp.add_handler(CommandHandler("decode", b64decode_text))
     dp.add_handler(CommandHandler("b32encode", b32encode_text))
     dp.add_handler(CommandHandler("b32decode", b32decode_text))
     dp.add_handler(CommandHandler("b16encode", b16encode_text))
