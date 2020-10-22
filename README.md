@@ -8,6 +8,9 @@ A telegram bot to encode/decode in base64, base32 or base16
 - Run `b64.py` 
 - Use exit or ctrl+c to stop the server
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/reejit/Telegram_encode-decode_bot.git)
+
+
 # Usage
 - `[option] [text]`
 <br>
