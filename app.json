@@ -1,0 +1,48 @@
+{
+  "name": "No PM Bot",
+  "description": "Modular  Telegram Bot Creator By: @i420Smoker",
+  "logo": "https://telegra.ph/file/55501e726922e79b8eea9.png",
+  "keywords": [
+    "telegram",
+    "bot",
+    "plugin",
+    "modular",
+    "productivity",
+    "relay",
+    "channel",
+    "administrators"
+  ],
+  "repository": "https://github.com/reejit/Telegram_encode-decode_bot",
+  "website": "https://telegram.dog/i420Smoker",
+  "success_url": "https://t.me/i420Smoker",
+  "env": {
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org! Please do not steal"
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Please do not steal"
+    },
+    "TOKEN": {
+      "description": "Obtain a Telegram bot token by contacting @BotFather"
+    },
+    "AUTH_USERS": {
+      "description": "List down the user IDs who should have permission to use and reply to users, seperated by SPACE. To get user ids, send /id command to Telegram @MentholManager_Bot",
+      "value": "1129966052"
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
